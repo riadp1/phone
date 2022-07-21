@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="js.js">
+</head>
+<body>
+   
+    <div class="main">
+
+        <nav>
+            <div class="logo">
+                <img src="img/kindpng_2280443.png" alt="">
+            </div>
+            <div class="navlink">
+                <ul>
+                    <li><a href="https://www.upwork.com/nx/find-work/most-recent">home</a></li>
+                    <li><a href="#">accessory</a></li>
+                    <li><a href="#">phones</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        
+       
+        <div class="info">
+            <div class="background">
+                <img src="/img/back.jpg" alt="">
+            </div>
+
+
+            <div class="overlay">
+                <h1>SAMSUNG GALAXY S20</h1>
+            </div>
+            
+            
+            <img src="/img/mobile.png" alt="" class="mobile">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="img/camera.png" alt="">
+                   
+                        <h1>camera</h1>
+                        <p>12MP, Wide angel lens</p>
+                        </div>
+               
+                <div class="feature two">
+                    <img src="/img/display.png" alt="">
+                    <h1>Display</h1>
+                    <p>6.5" Mini Drop Fillscreen</p>
+
+                </div>
+                <div class="feature three">
+                    <img src="/img/battery.png" alt="">
+                    <h1>Battery</h1>
+                    <p>3500MPH</p>
+                </div>
+                <div class="feature four">
+                    <img src="/img/processor.png" alt="">
+                    <h1>Processor</h1>
+                    <p>Snapdragon octa core 11mn</p>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="/img/arrow.png" alt="" id="upbtn" class="btn">
+            <h3>Features</h3>
+            <img src="/img/arrow.png" alt="" id="downbtn">
+        </div>
+    </div>
+    <script>
+        let circle = document.getElementById("circle");
+            let upbtn = document.getElementById("upbtn");
+            let downbtn = document.getElementById("downbtn");
+
+            let rotatevalue = circle.style.transform;
+            let rotatesum;
+
+            upbtn.addEventListener("click",function () {
+                rotatesum = rotatevalue + "rotate(-90deg)";
+                circle.style.transform = rotatesum;
+                rotatevalue = rotatesum;
+            })
+
+
+            downbtn.addEventListener("click", function () {
+                    rotatesum = rotatevalue + "rotate(90deg)";
+                    circle.style.transform = rotatesum;
+                    rotatevalue = rotatesum;
+                })
+
+
+    </script>
+    
+
+  
+    
+   
+    
+</body>
+</html>
